@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
 .navigation {
   border-bottom: 2px dashed #c0c0c0;
 }
@@ -180,8 +185,19 @@ img {
   align-items: center;
   padding: 5px;
 }
+@media (max-width: 500px) {
+  .navigation div {
+    flex-direction: column;
+  }
+}
 .navigation div h1 {
   vertical-align: middle;
+}
+@media (max-width: 500px) {
+  .navigation div h1 {
+    font-size: 3.2rem;
+    margin: 20px 0;
+  }
 }
 .navigation div nav {
   width: 40%;
@@ -190,6 +206,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .navigation div nav {
+    width: 80%;
+    padding: 0;
+    margin-bottom: 5px;
+  }
 }
 .navigation div nav a {
   text-decoration: none;
@@ -255,9 +278,22 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .destination .btn {
   font-size: 2rem;
@@ -268,4 +304,16 @@ img {
   width: 85%;
   padding: 13px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    font-size: 2rem;
+    border: 1px solid #c0c0c0;
+    border-radius: 13px;
+    color: #ffffff;
+    background-color: #17a2b8;
+    width: 85%;
+    padding: 13px;
+    text-align: center;
+  }
 }

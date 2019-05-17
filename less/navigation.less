@@ -11,15 +11,27 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    @media @mobile {
+      flex-direction: column;
+    }
     h1 {
       vertical-align: middle;
+      @media @mobile {
+        font-size: 3.2rem;
+        margin: 20px 0;
+      }
     }
     nav {
       width: 40%;
-
       font-size: 1.6rem;
       padding: 20px;
       .space-between();
+
+      @media @mobile {
+        width: 80%;
+        padding: 0;
+        margin-bottom: 5px;
+      }
       a {
         text-decoration: none;
         color: @font-color;
