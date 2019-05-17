@@ -1,1 +1,29 @@
 // Navigation Styles here
+
+.navigation {
+  border-bottom: 2px dashed @silver;
+
+  div {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    h1 {
+      vertical-align: middle;
+    }
+    nav {
+      width: 40%;
+
+      font-size: 1.6rem;
+      padding: 20px;
+      .space-between();
+      a {
+        text-decoration: none;
+        color: @font-color;
+      }
+    }
+  }
+}
